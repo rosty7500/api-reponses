@@ -16,7 +16,7 @@ query1 = """CREATE TABLE CUSTOMER (
          FIRST_NAME  CHAR(20) NOT NULL,
          LAST_NAME  CHAR(20),
          AGE INT,
-         SEX CHAR(1,
+         SEX CHAR(1),
          INCOME FLOAT,
          ID INT )"""
 cursor.execute(query1)
