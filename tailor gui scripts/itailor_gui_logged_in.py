@@ -42,6 +42,11 @@ try:
     driver.find_element_by_xpath("//div[@class='yith-wcwl-add-to-wishlist add-to-wishlist-96']/div[1]/a").click()
     eyes.check_window("wishlist with products")
 
+    #compare the products for logged in user when products are already added to compare
+    hover_over_hamburger(driver)
+    driver.find_element_by_xpath("//div[@class='menu-bars-item menu-bars-account']/ul/li[2]/a").click()
+    eyes.check_window("compare when products are already added to compare")
+
 
 except:
     driver.quit()
