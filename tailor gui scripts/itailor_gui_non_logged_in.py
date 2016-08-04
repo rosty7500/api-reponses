@@ -31,9 +31,13 @@ try:
     driver.find_element_by_xpath("//div[@class='entry-content clearfix']/div[2]/div/div/div/div/div/ul/li[3]/a").click()
     eyes.check_window("homepage_best_Sellers")
 
-    #suits
+    #suits/design tools
     driver.find_element_by_xpath("//div[@class='container']/nav/ul/li[2]/a")
-    eyes.check_window("suits")
+    eyes.check_window("suits/design tools")
+
+    #suits/buy
+    driver.find_element_by_xpath("//div[@class='wcs_frontend_design_buy_icon wcs_show_content']").click()
+    eyes.check_window("suits/buy")
 
     #shirts
     driver.find_element_by_xpath("//div[@class='container']/nav/ul/li[3]/a")
