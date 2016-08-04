@@ -84,6 +84,10 @@ try:
     driver.find_element_by_xpath("//div[@class='menu-bars-item menu-bars-account']/ul/li[5]/a").click()
     eyes.check_window("login/register")
 
+    #lost password
+    driver.find_element_by_xpath("//div[@class='woocommerce']/form/p[4]/a").click()
+    eyes.check_window("lost password")
+
     #search
     driver.find_element_by_xpath("//li[@class='mini-search']/a/i").click()
     driver.find_element_by_xpath("//input[@class='search-field']").send_keys("suits")
@@ -93,6 +97,7 @@ try:
     #terms and conditions
     driver.find_element_by_xpath("//div[@class='footer-centered']/div/p[3]/a").click()
     eyes.check_window("terms and conditions")
+    eyes.close()
 
 except:
     driver.quit()
